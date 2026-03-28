@@ -1,10 +1,15 @@
-# Example Site settings
+title: Ayush Dongre
+author: Ayush Dongre
+email: dongreayush39@gmail.com
+description: >-
+  Machine Learning Engineer portfolio and blog.
 
-#header_pages:
-#  - index.md
-#  - about.md
+header_pages:
+  - index.md
+  - about.md
+  - resume.md
 
-#footer: 'follow us on <a href="https://twitter.com/">twitter</a>'
+footer: 'Connect with me on <a href="https://linkedin.com/in/ayush-dongre">LinkedIn</a> or <a href="https://github.com/k0y0min">GitHub</a>'
 
 plugins:
   - jekyll-seo-tag
