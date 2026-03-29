@@ -11,6 +11,24 @@
         </li>
         {%- endif -%}
       {%- endfor -%}
+      <li>
+        <select id="theme-switcher" onchange="switchTheme(this.value)" style="background: transparent; border: 1px solid currentColor; color: inherit; font-size: inherit; cursor: pointer; padding: 2px;">
+          <option value="{{ '/assets/main-dark.css' | relative_url }}" style="color: black; background: white;">Dark</option>
+          <option value="{{ '/assets/main-light.css' | relative_url }}" style="color: black; background: white;">Light</option>
+          <option value="{{ '/assets/main-hacker.css' | relative_url }}" style="color: black; background: white;">Hacker</option>
+          <option value="{{ '/assets/main-nord.css' | relative_url }}" style="color: black; background: white;">Nord</option>
+        </select>
+        <script>
+          function switchTheme(url) {
+            document.getElementById('theme-style').setAttribute('href', url);
+            localStorage.setItem('theme-style', url);
+          }
+          window.addEventListener('DOMContentLoaded', function() {
+            var currentUrl = document.getElementById('theme-style').getAttribute('href');
+            document.getElementById('theme-switcher').value = currentUrl;
+          });
+        </script>
+      </li>
     </ul>
   </div>
 </header>
