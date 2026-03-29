@@ -6,6 +6,7 @@ permalink: /resume/
 
 # Resume
 
-You can view or download my resume using the link below:
-
-[Download My PDF Resume](/assets/resume.pdf)
+<object data="{{ '/assets/resume.pdf' | relative_url }}" type="application/pdf" width="100%" height="800px">
+    <p>It appears your Web browser is not configured to display PDF files. 
+    No worries, just <a href="{{ '/assets/resume.pdf' | relative_url }}">click here to download the PDF file.</a></p>
+</object>
